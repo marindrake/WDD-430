@@ -11,5 +11,5 @@ export class MessageItemComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {}
 }

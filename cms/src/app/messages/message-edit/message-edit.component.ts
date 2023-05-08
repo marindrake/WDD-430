@@ -17,11 +17,11 @@ export class MessageEditComponent implements OnInit {
   @Output() addMessageEvent = new EventEmitter<Message>();
   @ViewChild('subject') subject: ElementRef;
   @ViewChild('msgText') msgText: ElementRef;
-  currentSender: string = 'Seth';
+  currentSender: string = 'Brother Thayne';
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {}
 
   onSendMessage() {
     const subject = this.subject.nativeElement.value;
