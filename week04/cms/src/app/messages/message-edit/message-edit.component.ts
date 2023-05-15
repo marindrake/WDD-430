@@ -9,7 +9,7 @@ import {
 import { Message } from '../message.model';
 
 @Component({
-  selector: 'cms-message-edit',
+  selector: 'app-message-edit',
   templateUrl: './message-edit.component.html',
   styleUrls: ['./message-edit.component.css'],
 })
@@ -21,7 +21,7 @@ export class MessageEditComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit(): void {}
 
   onSendMessage() {
     const subject = this.subject.nativeElement.value;
