@@ -9,7 +9,6 @@ export class DocumentsComponent implements OnInit {
   selectedDocument: Document;
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit(): void {}
 
 }
