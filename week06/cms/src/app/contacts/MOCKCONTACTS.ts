@@ -127,7 +127,7 @@ export const MOCKCONTACTS: Contact[] = [
     name: 'Network/OS team',
     email: ' ',
     phone: ' ',
-    imageUrl: ' ',
+    imageUrl: '',
     group: [
       {
         id: '2',
@@ -162,7 +162,7 @@ export const MOCKCONTACTS: Contact[] = [
     name: 'Software Development team',
     email: ' ',
     phone: ' ',
-    imageUrl: ' ',
+    imageUrl: '',
     group: [
       {
         id: '1',
@@ -205,7 +205,7 @@ export const MOCKCONTACTS: Contact[] = [
     name: 'Web Development team',
     email: ' ',
     phone: ' ',
-    imageUrl: ' ',
+    imageUrl: '',
     group: [
       {
         id: '15',
@@ -240,7 +240,7 @@ export const MOCKCONTACTS: Contact[] = [
     name: 'Database team',
     email: ' ',
     phone: ' ',
-    imageUrl: ' ',
+    imageUrl: '',
     group: [
       {
         id: '7',
@@ -275,7 +275,7 @@ export const MOCKCONTACTS: Contact[] = [
     name: 'Computer Security team',
     email: ' ',
     phone: ' ',
-    imageUrl: ' ',
+    imageUrl: '',
     group: [
       {
         id: '5',
