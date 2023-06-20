@@ -11,7 +11,7 @@ export class DocumentService {
   documentListChangedEvent = new Subject<Document[]>();
 
   private documentsUrl =
-    'https://wdd430-cms-2022-default-rtdb.firebaseio.com/documents.json';
+    'https://rkjcms-35268-default-rtdb.firebaseio.com/documents.json';
   private documents: Document[] = [];
   private maxDocumentId: number;
 

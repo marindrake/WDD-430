@@ -11,7 +11,7 @@ export class ContactService {
   contactListChangedEvent = new Subject<Contact[]>();
 
   private contactsUrl =
-    'https://wdd430-cms-2022-default-rtdb.firebaseio.com/contacts.json';
+    'https://rkjcms-35268-default-rtdb.firebaseio.com/contacts.json';
   private contacts: Contact[] = [];
   private maxContactId: number;
 

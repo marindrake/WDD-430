@@ -9,7 +9,7 @@ export class MessageService {
   messageChangedEvent = new EventEmitter<Message[]>();
 
   private messagesUrl =
-    'https://wdd430-cms-2022-default-rtdb.firebaseio.com/messages.json';
+    'https://rkjcms-35268-default-rtdb.firebaseio.com/messages.json';
   private messages: Message[] = [];
   private maxMessageId: number;
 
