@@ -60,7 +60,7 @@ app.get("*", (req, res) => {
 //#region "MONGO"
 // establish a connection to the mongo database
 mongoose.connect(
-  process.env.MONGO_URL,
+  'mongodb://127.0.0.1:27017/cms',
   {
     useNewUrlParser: true,
   },
