@@ -1,0 +1,37 @@
+<div class="panel panel-default" xmlns="http://www.w3.org/1999/html">
+  <div class="panel-heading">
+    <div class="row pad-all">
+      <h4 class="title margin-left-right">{{ document.name }}</h4>
+      <div class="row pull-right margin-left-right">        
+        <a class="btn btn-info" routerLink="edit">Edit</a>
+        <a class="btn btn-danger" (click)="onDelete()">Delete</a>
+      </div>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="pad-left-right">
+      <div class="row">
+        <label>Genre:</label>
+        <span class="label-value detail-description">{{
+          document.genre
+        }}</span>
+      </div>
+      <br />
+      <div class="row">
+        <label>Rating:</label>
+        <span class="label-value detail-url">{{ document.rating }}</span>
+      </div>
+      <br />
+      <div class="row">
+        <label>Image:</label>
+        <span class="label-value detail-url">{{ document.url }}</span>
+      </div>
+      <br />
+      <br />
+      <div class="pull-left">
+        <img [src]="document.url" alt="{{ document.url }}" class="img-responsive" *ngIf="document.url">
+      </div>
+
+    </div>
+  </div>
+</div>
