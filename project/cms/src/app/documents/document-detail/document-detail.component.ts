@@ -29,7 +29,7 @@ export class DocumentDetailComponent implements OnInit {
   }
 
   onView() {
-    if (this.document.url) this.nativeWindow.open(this.document.url);
+    if (this.document.path) this.nativeWindow.open(this.document.path);
   }
 
   onDelete() {

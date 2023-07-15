@@ -5,8 +5,9 @@ export class Document {
   constructor(
     public name: string,
     public genre: string,
+    public released: string,
     public rating: string,
-    public url: string,
+    public path: string,
     public children?: Document[]
   ) {}
 }

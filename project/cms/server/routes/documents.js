@@ -27,8 +27,9 @@ router.post("/", (req, res, next) => {
     id: maxDocumentId,
     name: req.body.name,
     genre: req.body.genre,
+    released: req.body.released,
     rating: req.body.rating,
-    url: req.body.url,
+    path: req.body.path,
   });
   document
     .save()
@@ -51,8 +52,9 @@ router.put("/:id", (req, res, next) => {
     .then((doc) => {
       doc.name = req.body.name;
       doc.genre = req.body.genre;
+      doc.released = req.body.released;
       doc.rating = req.body.rating;
-      doc.url = req.body.url;
+      doc.path = req.body.path;
 
       Document.updateOne({ id: req.params.id }, doc)
         .then((result) => {

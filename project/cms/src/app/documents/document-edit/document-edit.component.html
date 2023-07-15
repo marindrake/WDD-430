@@ -37,6 +37,22 @@
 
       <div class="row">
         <div class="col-sm-12 form-group">
+          <label for="url">Released:</label>
+          <input
+            type="text"
+            id="released"
+            name="released"
+            [ngModel]="document?.released"
+            class="form-control"
+            size="150"
+            max="255"            
+            #rating="ngModel"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 form-group">
           <label for="url">Rating:</label>
           <input
             type="text"
@@ -53,12 +69,12 @@
 
       <div class="row">
         <div class="col-sm-12 form-group">
-          <label for="url">ImagePath:</label>
+          <label for="path">ImagePath:</label>
           <input
             type="text"
-            id="url"
-            name="url"
-            [ngModel]="document?.url"
+            id="path"
+            name="path"
+            [ngModel]="document?.path"
             class="form-control"
             size="150"
             max="255"

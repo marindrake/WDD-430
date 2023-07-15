@@ -12,24 +12,29 @@
     <div class="pad-left-right">
       <div class="row">
         <label>Genre:</label>
-        <span class="label-value detail-description">{{
+        <span class="label-value detail-genre">{{
           document.genre
         }}</span>
       </div>
       <br />
       <div class="row">
+        <label>Released:</label>
+        <span class="label-value detail-released">{{ document.released }}</span>
+      </div>
+      <br />
+      <div class="row">
         <label>Rating:</label>
-        <span class="label-value detail-url">{{ document.rating }}</span>
+        <span class="label-value detail-rating">{{ document.rating }}</span>
       </div>
       <br />
       <div class="row">
         <label>ImagePath:</label>
-        <span class="label-value detail-url">{{ document.url }}</span>
+        <span class="label-value detail-path">{{ document.path }}</span>
       </div>
       <br />
       <br />
       <div class="pull-left">
-        <img [src]="document.url" alt="{{ document.url }}" class="img-responsive" *ngIf="document.url">
+        <img [src]="document.path" alt="{{ document.path }}" class="img-responsive" *ngIf="document.path">
       </div>
 
     </div>
